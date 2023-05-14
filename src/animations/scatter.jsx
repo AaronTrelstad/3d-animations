@@ -1,13 +1,14 @@
 import { ScatterGraphy } from 'react-scatter-graphy';
+import image from './heart.png';
 
 function Scatter() {
   return (
-    <div style={{ width: '50%' }}>
+    <div style={{ width: '70%' }}>
       <ScatterGraphy
-        src="twitter_main.jpeg"
-        size={10}
+        src={image}
+        size={1}
         duration={500}
-        resizeDelay={10}
+        resizeDelay={500}
       />
     </div>
   );

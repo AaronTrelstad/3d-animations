@@ -4,8 +4,12 @@ import "./spinningCube.css";
 
 function Cube(props) {
   const mesh = useRef();
-
-  useFrame ( ()=> (mesh.current.rotation.x += 0.01))  
+  
+  useFrame ( ()=> (
+    mesh.current.rotation.x += 0.01,
+    mesh.current.rotation.y += 0.01,
+    mesh.current.rotation.z += 0.02
+    ))  
 
   return (
     <mesh ref={mesh}>
@@ -21,7 +25,7 @@ function SpinningCube() {
         <Canvas>
           <ambientLight />
           <pointLight position={[10,10,10]} />
-          <Cube />
+          <Cube position={[5, 5, 10]}/>
         </Canvas>
       );
 }
