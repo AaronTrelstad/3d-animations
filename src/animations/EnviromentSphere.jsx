@@ -13,7 +13,10 @@ export default function Object() {
         </AccumulativeShadows>
       </group>
       <Env />
-      <OrbitControls  enablePan={false} enableZoom={false} minPolarAngle={Math.PI / 2.1} maxPolarAngle={Math.PI / 2.1} />
+      <OrbitControls enablePan={false} enableZoom={false} minPolarAngle={Math.PI / 2.1} maxPolarAngle={Math.PI / 2.1} />
+      {
+        //Add autoRotate autoRotateSpeed={2} in Orbit controls to auto rotate
+      }
     </Canvas>
   )
 }
