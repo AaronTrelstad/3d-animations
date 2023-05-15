@@ -15,7 +15,7 @@ function Cube(props) {
     <mesh ref={mesh}>
       <boxGeometry args={[2, 2, 2]} />
       <meshStandardMaterial />
-      <meshStandardMaterial color={"blue"}/> 
+      <meshStandardMaterial color={"lightblue"}/> 
     </mesh>
   );
 }

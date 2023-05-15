@@ -7,7 +7,7 @@ import Object from './animations/EnviromentSphere.jsx';
 const App = () => {
   return (
     <>
-      <SpinningCube />
+      <Object />
     </>
   )
 }
